@@ -29,12 +29,7 @@ app.use(morgan('combined'));
                This is my second article
         
             </p>
-            <p>
-               This is the content of article one .
-           </p>
-            <p>
-               his is the content of article two  .
-           </p>
+      
         <p>
             This is the content of article two  .
         </p>
@@ -67,10 +62,10 @@ app.use(morgan('combined'));
  };
 
 function createTemplate (data) {
-    var title=data.title;
-    var date=data.date;
-    var heading= data.heading;
-    var content= data.contant;
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.contant;
     
     var htmlTemplate = 
 `  <html>
@@ -93,7 +88,7 @@ function createTemplate (data) {
       <h3>
         ${heading}
     </h3>
-    <div
+    <div>
     ${date}
     </div>
     <div>
