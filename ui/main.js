@@ -8,5 +8,5 @@ element.innerHTML=('Dinosure with Laptop');
 //move the image
 var img=document.getElementById('madi');
 img.onclick = function(){
-    img.style.marginleft = '200px';
+    img.style.marginleft = '100px';
 };
