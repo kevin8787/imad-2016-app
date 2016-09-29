@@ -1,18 +1,16 @@
-console.log('Loaded!');
+//counter code
+var button = document.getElementById("counter");
+var counter =0;
 
-//change the text of the main-text div
-var element=document.getElementById('main-text');
 
-element.innerHTML=('Dinosure with Laptop');
-
-//move the image
-var img=document.getElementById('madi');
-var marginleft=0;
-function moveright()
-{
-    marginleft= marginleft+10;
-    img.style.marginleft=marginleft+'px';
-}
-img.onclick = function(){
-    var interval=setInterval(moveright,100);
+button.onclick =function(){
+  //make a request to counter end point
+  
+  
+  //capture the request and storeit in a variable
+  
+  //render the variable in the correct span
+  counter = counter +1;
+  var span = document.getElementById('count');
+  span.InnerHTML = counter.toString();
 };
