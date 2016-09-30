@@ -114,6 +114,7 @@ app.get('/counter',function (req, res){
 });
 
 var names= [];
+var push = [];
 app.get('/submit-name/:name', function (req,res) {
  var name = req.query.name;
  name.push(name);
